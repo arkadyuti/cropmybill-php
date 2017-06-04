@@ -1,0 +1,2 @@
+https://api.hasoffers.com/Apiv3/json?NetworkId=vcm&Target=Affiliate_Report&Method=getConversions&api_key=59d617b249a0d11e35646154e97903d7e836059ff74772d37ed9ce36d8c20d29&fields%5B%5D=Stat.datetime&fields%5B%5D=Offer.name&fields%5B%5D=Stat.conversion_status&fields%5B%5D=Stat.approved_payout&fields%5B%5D=Stat.session_ip&fields%5B%5D=Stat.ad_id&fields%5B%5D=Stat.affiliate_info1&fields%5B%5D=Stat.offer_id&fields%5B%5D=Stat.sale_amount&limit=10&data_start=2016-02-24&data_end=2016-02-24
+

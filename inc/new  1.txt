@@ -1,0 +1,16 @@
+<a href="http://tracking.vcommission.com/aff_c?offer_id=110&aff_id=36716&file_id=22091" target="_blank"><img src="http://media.vcommission.com/brand/files/vcm/110/Snapdeal_Fashion_336X280.jpg" width="336" height="280" border="0" /></a>
+<a href="http://tracking.vcommission.com/aff_c?offer_id=1022&aff_id=36716&file_id=58854" target="_blank"><img src="http://media.vcommission.com/brand/files/vcm/1022/Paytm_Extra50CashbackonFashion_728x90.jpg" width="728" height="90" border="0" /></a>
+<a href="http://tracking.vcommission.com/aff_c?offer_id=1568&aff_id=36716&file_id=55740" target="_blank"><img src="http://media.vcommission.com/brand/files/vcm/1568/20150416161631-Flipkart_CPI_728x90.jpg" width="728" height="90" border="0" /></a>
+<a href="http://tracking.vcommission.com/aff_c?offer_id=126&aff_id=36716&file_id=41252" target="_blank"><img src="http://media.vcommission.com/brand/files/vcm/126/Jabong_INR1000OFF_300x250.jpg" width="300" height="250" border="0" /></a>
+SELECT vcommision.id,vcommision.Offer_name, vcommision.status, vcommision.payout, vcommision.datetime, redirect3.session
+FROM vcommision
+INNER JOIN redirect3
+ON vcommision.`affiliate_info1`=redirect3.aff_sub and redirect3.session like 'mask%'
+GROUP BY vcommision.id;
+
+
+
+SELECT login.signup_name, redirect3.cname, redirect3.session
+FROM redirect3
+INNER JOIN login
+ON redirect3.session = login.signup_email and redirect3.cname like 'amaz%'  and redirect3.timestamp like '2015-06-24%';
